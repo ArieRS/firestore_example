@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+### Firestore Documentation
+https://firebase.flutter.dev/docs/firestore/usage
+
 ### Resource
 https://medium.com/flutter-community/flutter-crud-operations-using-firebase-cloud-firestore-a7ef38bbf027
 
