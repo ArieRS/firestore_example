@@ -1,8 +1,17 @@
-
+import 'package:firestore_example/contoh_sederhana/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firestore_example/screens/login_screen.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+// void main() {
+//   runApp(MyApp());
+// }
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -16,7 +25,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.indigo,
         brightness: Brightness.dark,
       ),
-      home: LoginScreen(),
+      home: 
+      MainPage(),
+      // LoginScreen(),
+
     );
   }
 }
+
